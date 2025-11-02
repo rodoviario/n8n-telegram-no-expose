@@ -17,9 +17,9 @@ mkdir telegram-poller && cd telegram-poller
 touch .env Dockerfile poller.py
 ```
 
-OR GIT CLONE THIS REPO:
+**OR GIT CLONE THIS REPO:**
 ```bash
-git clone https://github.com/JoaoPito/n8n-telegram-no-expose.git
+git clone https://github.com/JoaoPito/n8n-telegram-no-expose.git telegram-poller
 ```
 
 ---
