@@ -5,7 +5,7 @@ This guide walks you through setting up a local Telegram polling script that wor
 ✅ No publishing or public endpoints required
 🖥️ Perfect for local or self-hosted n8n setups
 🆓 Free and self-contained
-🐳 Requires only Docker-no ngrok, no third-party tunnels
+🐳 Requires only Docker - no ngrok, no third-party tunnels
 
 With this setup, Telegram messages are fetched via polling and forwarded directly to your local n8n workflows using a webhook.
 ---
@@ -19,7 +19,7 @@ touch .env Dockerfile poller.py
 
 **OR GIT CLONE THIS REPO:**
 ```bash
-git clone https://github.com/JoaoPito/n8n-telegram-no-expose.git telegram-poller && cd telegram-poller
+git clone https://github.com/rodoviario/n8n-telegram-no-expose.git telegram-poller && cd telegram-poller
 touch .env
 ```
 
@@ -30,7 +30,7 @@ touch .env
 ```env
 BOT_TOKEN=telegram_bot_token_here
 N8N_URL=http://n8n:5678/webhook/ # IMPORTANT: both URLs must have a trailing '/'
-N8N_URL=http://n8n:5678/webhook-test/ # IMPORTANT: both URLs must have a trailing '/'
+N8N_TEST_URL=http://n8n:5678/webhook-test/ # IMPORTANT: both URLs must have a trailing '/'
 WEBHOOK_PATH=telegram-local
 ```
 
